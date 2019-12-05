@@ -1,0 +1,72 @@
+[
+    {
+        "source": "Pune",
+        "destination": "Bengaluru",
+        "cost": 50
+    },
+    {
+        "source": "Bengaluru",
+        "destination": "Pune",
+        "cost": 50
+    },
+    {
+        "source": "Pune",
+        "destination": "Mumbai",
+        "cost": 50
+    },
+    {
+        "source": "Mumbai",
+        "destination": "Pune",
+        "cost": 50
+    },
+    {
+        "source": "Pune",
+        "destination": "Delhi",
+        "cost": 50
+    },
+    {
+        "source": "Delhi",
+        "destination": "Pune",
+        "cost": 50
+    },
+    {
+        "source": "Mumbai",
+        "destination": "Thane",
+        "cost": 50
+    },
+    {
+        "source": "Thane",
+        "destination": "Mumbai",
+        "cost": 50
+    },
+    {
+        "source": "Thane",
+        "destination": "Goa",
+        "cost": 50
+    },
+    {
+        "source": "Thane",
+        "destination": "Kashmir",
+        "cost": 50
+    },
+    {
+        "source": "Kashmir",
+        "destination": "Thane",
+        "cost": 50
+    },
+    {
+        "source": "Goa",
+        "destination": "Thane",
+        "cost": 50
+    },
+    {
+        "source": "Kashmir",
+        "destination": "Solapur",
+        "cost": 50
+    },
+    {
+        "source": "Solapur",
+        "destination": "Kashmir",
+        "cost": 50
+    }
+]

@@ -1,0 +1,56 @@
+{
+  "name": "irctc-backend",
+  "version": "1.0.0",
+  "description": "IRCTC ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impiyush83/irctc-backend.git"
+  },
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "scripts": {
+    "precommit": "npm run lint",
+    "start": "npm install && \"node_modules/.bin/nodemon\" index.js",
+    "lint": "eslint *.js ./lib/**/*.js && echo Lint Passed ❤",
+    "test": "NODE_ENV=test istanbul --include-all-sources cover _mocha -- -u bdd $(find test -name '*.js') && istanbul check-coverage && echo All tests passed ?"
+  },
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "config": "1.28.1",
+    "express": "^4.16.2",
+    "express-joi": "^0.3.1",
+    "lodash": "^4.17.15",
+    "mongodb": "^3.3.5",
+    "mongoose": "^5.7.13",
+    "nodemon": "^2.0.1",
+    "ramda": "^0.26.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "4.11.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1",
+    "istanbul": "0.4.5",
+    "mocha": "^6.2.2",
+    "rewire": "3.0.2",
+    "should": "13.1.3",
+    "simple-mock": "0.8.0"
+  },
+  "keywords": [
+    "irctc",
+    "travel",
+    "paths",
+    "tourism"
+  ],
+  "author": "Piyush Nalawade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/impiyush83/irctc-backend/issues"
+  },
+  "homepage": "https://github.com/impiyush83/irctc-backend#readme"
+}
