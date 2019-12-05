@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 const Constants = require('./lib/constants')
 const CityRoutes = require('./lib/routes/cityRoutes')
 const CityConnectionRoutes = require('./lib/routes/cityConnectionRoutes')
+const PathRoutes = require('./lib/routes/pathRoutes')
 const MongoConnection = require('./lib/database/connect')
 
 const _init = async function () {
@@ -18,6 +19,7 @@ const _init = async function () {
   // Connect all our routes to our application.
   app.use('/', CityRoutes)
   app.use('/', CityConnectionRoutes)
+  app.use('/', PathRoutes)
 
   // Turn on the server.
   app.listen(Constants.SERVER.PORT, () => console.log(`App listening on port ${Constants.SERVER.PORT}`))

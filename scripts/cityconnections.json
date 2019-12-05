@@ -2,32 +2,32 @@
     {
         "source": "Pune",
         "destination": "Bengaluru",
-        "cost": 50
+        "cost": 10
     },
     {
         "source": "Bengaluru",
         "destination": "Pune",
-        "cost": 50
+        "cost": 10
     },
     {
         "source": "Pune",
         "destination": "Mumbai",
-        "cost": 50
+        "cost": 20
     },
     {
         "source": "Mumbai",
         "destination": "Pune",
-        "cost": 50
+        "cost": 20
     },
     {
         "source": "Pune",
         "destination": "Delhi",
-        "cost": 50
+        "cost": 30
     },
     {
         "source": "Delhi",
         "destination": "Pune",
-        "cost": 50
+        "cost": 30
     },
     {
         "source": "Mumbai",
