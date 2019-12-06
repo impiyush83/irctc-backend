@@ -14,8 +14,7 @@ A web-server (with HTTP APIs) that manages irctc travel paths.
 - Optional: You can also run test cases by ```npm test```.
 -----
 # Entity
-- Logically there are 3 entities: `City, CityConnection & User`. If we were to design our systems in SQL DB, then there would have been 3 tables for each, having 1:n relationship between (City to CityConnections) respectively.
-- But as we wanted to store data in NOSQL datastore, we have clubbed these entities into single two models as shown below. 
+- Logically there are 2 entities: `City, CityConnection`. If we were to design our systems in SQL DB, then there would have been tables for each, having 1:n relationship between (City to CityConnections) respectively.
 - Also among all the NOSQL DB's we have chosen MongoDB document data store, because it provides atomicity at the document level & is strongly consistent (providing CP of the CAP theorem).
     ```
     CitySchema - Contains city details and its neigbouring cities
