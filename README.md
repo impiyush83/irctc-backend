@@ -85,6 +85,18 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
         ]
     }   
     ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When admin tries to hit the api , but there is no role:admin in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
+    }
+    ```
 
 ### GET Cities with Maximum Crossovers
 
@@ -108,6 +120,18 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
                 "cityName": "Kashmir"
             }
         ]
+    }
+    ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When admin tries to hit the api , but there is no role:admin in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
     }
     ```
 
@@ -156,6 +180,18 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
         "message" : "the value of cityName is not allowed to be undefined"
     }
     ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When admin tries to hit the api , but there is no role:admin in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
+    }
+    ```
 
 ### DELETE city
 
@@ -182,11 +218,23 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
     Failure response 
     Status code: 400
     
-    When user tries to sell a stock, but given quantity exceeds than what he has.
+    When admin tries to sell a stock, but given quantity exceeds than what he has.
     {
         "code": 5001,
         "success": false,
         "message": "Insufficient quantity of stocks available., Currently available <quantity> stocks of <stock name>"
+    }
+    ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When admin tries to hit the api , but there is no role:admin in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
     }
     ```
 
@@ -215,6 +263,18 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
         "message": Success
     }
     ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When admin tries to hit the api , but there is no role:admin in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
+    }
+    ```
 
 ### DELETE City Connection
 
@@ -239,6 +299,18 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
     {
         "success": true,
         "message": Success
+    }
+    ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When admin tries to hit the api , but there is no role:admin in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
     }
     ```
 
@@ -268,6 +340,30 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
         "message": Success
     }
     ```
+    ```
+    Failure response
+    Status code: 400
+    
+    When admin tries to update the city Connection , but the city in request does not exists.
+    
+    {
+        "code": 400,
+        "success": false,
+        "message": "City Connection does not exist"
+    }
+    ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When admin tries to hit the api , but there is no role:admin in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
+    }
+    ```
 
 ## User Authorized API's: 
 
@@ -279,7 +375,7 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
     ```
     Example using cURL
     
-    curl -X --request GET 'http://127.0.0.1:3000/paths?source=Pune&destination=Kashmir' \
+    curl -X --request GET 'http://localhost/paths?source=Pune&destination=Kashmir' \
     -H "role: user"
     ```
     ```
@@ -318,6 +414,30 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
                 }
             ]
         }
+    }
+    ```
+    ```
+    Failure response
+    Status code: 401
+    
+    When user tries to hit the api , but there is no role:user in header.
+    
+    {
+        "code": 401,
+        "success": false,
+        "message": "Not Authorized"
+    }
+    ```
+    ```
+    Failure response
+    Status code: 400
+    
+    When user tries to hit the api, but wrong city name.
+    
+    {
+        "code": 400,
+        "success": false,
+        "message": "Not Authorized"
     }
     ```
 -----
