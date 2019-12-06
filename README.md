@@ -442,5 +442,6 @@ https://documenter.getpostman.com/view/4946631/SWE3dzjB?version=latest#bce6c6ee-
 -----
 # Test cases
 
+- Currently in progress !!! 
 - Run **npm test** from command line at the root directory of the project to run the test cases.
 - Test cases are run on seperate **test** database. As we don't want to run test cases on our actual live DB!
