@@ -1,4 +1,5 @@
 const simple = require('simple-mock')
+// eslint-disable-next-line no-unused-vars
 var should = require('chai').should()
 const CityController = require('./../../lib/controller/CityController')
 const db = require('./../../lib/dao/models/city')
