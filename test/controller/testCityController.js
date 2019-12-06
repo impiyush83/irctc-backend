@@ -1,4 +1,5 @@
 const simple = require('simple-mock')
+var should = require('chai').should()
 const CityController = require('./../../lib/controller/CityController')
 const db = require('./../../lib/dao/models/city')
 const CityDao = require('./../../lib/dao/CityDao')
@@ -22,8 +23,8 @@ describe('CityController', function () {
       await CityController.addCity(newCity)
       // fetch city from model
       const city = await CityDao.getCityByCityName(newCity.cityName)
-      // chec
-      newCity.cityName.should.be.eql(city.cityName)
+      // assertion for city
+      newCity.cityName.should.equal(city.cityName)
     })
   })
 })
