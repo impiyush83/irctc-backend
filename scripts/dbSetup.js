@@ -1,8 +1,8 @@
 const cities = require('./cities.json')
 const cityconnections = require('./cityconnections.json')
-const MongoConnection = require('../lib/database/connect')
-const dbCity = require('../lib/database/models/city')
-const dbCityConnection = require('../lib/database/models/cityConnections')
+const MongoConnection = require('../lib/dao/connect')
+const dbCity = require('../lib/dao/models/city')
+const dbCityConnection = require('../lib/dao/models/cityConnections')
 
 const addCity = async function (cityObj, cityConnectionsObj) {
   // clear entries
